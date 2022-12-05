@@ -38,6 +38,8 @@ $string['applicationcancelednotification'] = 'Your course enrolment application 
 
 $string['applymanage'] = 'Manage enrolment applications';
 
+$string['noselectionstring'] = 'No selection';
+
 $string['status'] = 'Enable existing enrollments';
 $string['status_help'] = 'If enabled together with \'Allow new enrolments\' disabled, only users who self enrolled previously can access the course. If disabled, this enrolment method is effectively disabled, since all existing enrolments are suspended and new users cannot enrol.';
 $string['newenrols'] = 'Allow new registrations';

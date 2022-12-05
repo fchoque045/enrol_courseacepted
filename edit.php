@@ -88,15 +88,8 @@ if ($mform->is_cancelled()) {
 }
 
 $PAGE->set_heading(format_string($course->fullname));
-$PAGE->set_title('curso aceptado');
+$PAGE->set_title(get_string('pluginname', 'enrol_courseacepted'));
 
 
 $renderer = $PAGE->get_renderer('enrol_courseacepted');
 $renderer->edit_page($mform);
-
-// echo $OUTPUT->header();
-// echo $OUTPUT->heading(get_string('enrolusers', 'enrol'));
-
-// $mform->display();
-
-// echo $OUTPUT->footer();

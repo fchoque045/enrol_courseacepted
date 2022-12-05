@@ -25,6 +25,8 @@ $string['enrolname'] = 'Curso aceptado automático';
 $string['pluginname'] = 'Curso aceptado automático';
 $string['pluginname_desc'] = 'Este complemento permite incribirse a un curso solo si ha terminado un curso determinado';
 
+$string['noselectionstring'] = 'No hay selección';
+
 $string['confirmmailsubject'] = 'Asunto del correo de confirmación';
 $string['confirmmailcontent'] = 'Contenido del correo de confirmación';
 $string['cancelmailsubject'] = 'Asunto del correo de cancelación';

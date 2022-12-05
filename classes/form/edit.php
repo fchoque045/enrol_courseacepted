@@ -69,7 +69,7 @@ class edit extends moodleform {
 
         $options = array(
             'multiple' => false,
-            'noselectionstring' => 'No hay seleccion',
+            'noselectionstring' => get_string('noselectionstring', 'enrol_courseacepted'),
         );
         $mform->addElement('autocomplete', 'customint1', get_string('requiredcourse', 'enrol_courseacepted'), $full_names_courses, $options);
         $mform->addRule('customint1', get_string('required'), 'required', null, 'client');
