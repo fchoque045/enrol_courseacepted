@@ -63,3 +63,6 @@ The following placeholders may be included in the message:
 * Link to user\'s profile page {$a->profileurl}
 * User email {$a->email}
 * User fullname {$a->fullname}';
+
+$string['customloginmessage'] = 'Mensaje que se muestra al momento de matricularse';
+$string['customerrormessage'] = 'Mensaje en caso de que no cumpla con la condicion';

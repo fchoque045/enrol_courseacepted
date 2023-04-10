@@ -62,3 +62,6 @@ Los siguientes marcadores pueden incluirse en el mensaje:
 * Enlace a la pagina de perfil de usuario {$a->profileurl}
 * email del usuario {$a->email}
 * Nombre completo del usuario {$a->fullname}';
+
+$string['customloginmessage'] = 'Mensaje que se muestra al momento de matricularse';
+$string['customerrormessage'] = 'Mensaje en caso de que no cumpla con la condicion';

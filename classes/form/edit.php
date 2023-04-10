@@ -80,6 +80,11 @@ class edit extends moodleform {
         $mform->addElement('textarea', 'customtext1', get_string('customwelcomemessage', 'enrol_courseacepted'), $options_size);
         $mform->addHelpButton('customtext1', 'customwelcomemessage', 'enrol_courseacepted');
 
+        $mform->addElement('textarea', 'customtext2', get_string('customloginmessage', 'enrol_courseacepted'), $options_size);
+        $mform->addHelpButton('customtext2', 'customloginmessage', 'enrol_courseacepted');
+
+        $mform->addElement('textarea', 'customtext3', get_string('customerrormessage', 'enrol_courseacepted'), $options_size);
+        $mform->addHelpButton('customtext3', 'customerrormessage', 'enrol_courseacepted');
         // TODO
         // $mform->addElement('editor', 'customtext2', get_string('customwelcomemessage', 'enrol_courseacepted'),$options_size);
         // $mform->setType('customtext2', PARAM_RAW);

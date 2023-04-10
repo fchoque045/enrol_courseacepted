@@ -141,7 +141,11 @@ class enrol_courseacepted_plugin extends enrol_plugin {
                 // $notification = $OUTPUT->notification(get_string('notification', 'enrol_courseacepted'), 'notifysuccess');
                 // $button = $OUTPUT->single_button(new moodle_url('/course/view.php', array('id'=> $instance->courseid)), get_string('continue'));
             } else {
-                $notification = $OUTPUT->notification(get_string('notification_invalid', 'enrol_courseacepted',$fullname), 'notifywarning');
+                if ($instance->customtext3 == ""){
+                    $notification = $OUTPUT->notification(get_string('notification_invalid', 'enrol_courseacepted',$fullname), 'notifywarning');
+                } else {
+                    $notification = $OUTPUT->notification($instance->customtext3, 'notifywarning');
+                }
                 $button = $OUTPUT->single_button(new moodle_url('/'), get_string('continue'));
                 return $notification . $button;
             }
@@ -153,7 +157,11 @@ class enrol_courseacepted_plugin extends enrol_plugin {
             $context = context_course::instance($instance->customint1);
             $name = format_string($fullname, true, ['context' => $context]);
             $link = html_writer::link(new moodle_url('/course/view.php', ['id' => $instance->customint1]), $name);
-            $str = get_string('willbeenrolled', 'enrol_courseacepted', $link . '<br/><br/>' . $str);
+            if ($instance->customtext2 == ""){
+                $str = get_string('willbeenrolled', 'enrol_courseacepted', $link . '<br/><br/>' . $str);
+            } else {
+                $str = $instance->customtext2;
+            }
         }
         
         $output = $mform->render();
