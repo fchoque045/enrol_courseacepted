@@ -24,9 +24,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-class enrol_apply_notification extends \core\message\message {
+class enrol_courseacepted_notification extends \core\message\message {
     public function __construct($to, $from, $type, $subject, $content, $url,$courseid) {
-        $this->component = 'enrol_apply';
+        $this->component = 'enrol_courseacepted';
 
         switch ($type) {
             case 'confirmation':
